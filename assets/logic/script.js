@@ -59,7 +59,7 @@ function showQuestion(question) {
 //function to start the timer
 //should run a countdown that is displayed in the HTML, when time is up, should run the game over function
 function startClock() {
-  countdown.innerHTML = "Time Remaining: " + timer;
+  countdown.innerHTML = "Поспіши! Час збігає! " + timer;
   if (timer <= 0) {
     gameOver();
   } else {
@@ -117,7 +117,7 @@ function showResults() {
   qElement.innerText = "";
   scoreArea.classList.remove("hide");
   answerButtons.classList.add("hide");
-  scoreArea.innerHTML = `Your score is ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Enter Your Name"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
+  scoreArea.innerHTML = `Your score is ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Вкажіть своє ім'я"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
   username = document.getElementById("initials");
   saveButton = document.getElementById("save-btn");
   username.addEventListener("keyup", function() {
@@ -173,7 +173,7 @@ function clearScores() {
 /////
 const questions = [
   {
-    question: "Як сказати по англійські - час від часу?",
+    question: "Як сказати по англійськи - час від часу?",
     answers: [
       { text: "with time to time", correct: false },
       { text: "from time to time", correct: true },
@@ -245,7 +245,7 @@ const questions = [
     ]
   },
   {
-    question: "зависть",
+    question: "заздрість",
     answers: [
       { text: "negative", correct: false },
       { text: "stealth", correct: false },
