@@ -117,7 +117,7 @@ function showResults() {
   qElement.innerText = "";
   scoreArea.classList.remove("hide");
   answerButtons.classList.add("hide");
-  scoreArea.innerHTML = `Your score is ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Вкажіть своє ім'я"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
+  scoreArea.innerHTML = `Ви набрали балів: ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Вкажіть своє ім'я"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
   username = document.getElementById("initials");
   saveButton = document.getElementById("save-btn");
   username.addEventListener("keyup", function() {
